@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>关于辅德</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="email=no" name="format-detection">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta http-equiv="Cache-Control" content="max-age=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="static/css/mobi.css">
+	<link rel="stylesheet" href="static/css/switch.css">
+	<link href="static/css/animate.css" rel="stylesheet" />
+</head>
+<body>
+<!-- <img src="static/img/load.png" class="PANO_spinner" /> -->
+<div class="loadbg">
+	<img src="static/img/load.png" class="PANO_spinner">
+</div>
+
+<div id="slider_name" class="top">
+	<ul class="silder_con">
+		<li><img src="static/img/1_01.jpg"></li>
+		<li><img src="static/img/2_01.jpg"></li>
+		<li><img src="static/img/3_01.jpg"></li>
+		<li><img src="static/img/4_01.jpg"></li>
+		<li><img src="static/img/5_01.jpg"></li>
+		<div style="clear:both"></div>
+	</ul>
+	<ul class="silder_nav clearfix">            
+		<li class="active"><a style="cursor:default" href="#"></a></li>    
+		<li><a target="blank"></a></li>    
+		<li><a target="blank"></a></li>    
+		<li><a target="blank"></a></li> 
+		<li><a target="blank"></a></li>    
+	</ul>
+</div>
+<div class="down">
+	<div class="downlogo">
+		<img src="static/img/down_11.png">
+	</div>
+	<div class="content animated fadeInRight" id="c0" style="display:block">
+		辅德教育由80年代毕业于北京大学数学系和物理系的两位先生协力创建。两位先生在各自的领域里都有着丰硕的成果和丰富的经验，富有穿透力的思维和学习方法，严谨的学风和深厚的学养铸就了整个团队的特色和风格。
+	</div>
+	<div class="content animated fadeInRight" id="c1">
+		辅德教育的教学团队经验丰富,认真负责，教学针对性强，不仅有效帮助学员提高成绩，更在改善习惯，拓展思维和提升能力方面效果显著。
+	</div>
+	<div class="content animated fadeInRight" id="c2">
+		辅德教育开设了面向中小学生的放心晚托班和语数英物理等课程。每个新入学的学生都有指定老师协助导入，确保有需要的学生随时插班。
+	</div>
+	<div class="content animated fadeInRight" id="c3">
+		辅德教育还组织开展了中小学师资培训班，对有志从事基础教育的新教师进行了教学规范，教学能力，学情研究等方面的技能培训。
+	</div>
+	<div class="content animated fadeInRight" id="c4">
+		辅德教育地处锡城中心，交通便利，环境整洁，设施齐全，从各个方面为学生和家长们提供最好的教育服务。
+	</div>
+	<div class="downlogo">
+		<img src="static/img/down_14.png">
+	</div>
+</div>
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/switch.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="static/js/weixin.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+	var lilength=$(".silder_con li").length;
+	$(".silder_con li").width($(window).width());
+	$(".silder_con").height($(".silder_con li").height()).width($(window).width()*lilength);
+	$("#slider_name").height($(".silder_con li").height());
+	$(".down").show();
+	$(".loadbg").hide();
+}
+
+</script>
+</body>
+</html>

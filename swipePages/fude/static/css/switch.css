@@ -1,0 +1,89 @@
+@charset "utf-8";
+*{font-family: "微软雅黑"}
+body{
+	background:url(../img/01-bg.jpg) no-repeat center;
+	background-size:100% 100%; 
+	min-height: 100%;
+	overflow-y:scroll;
+}
+.top{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.top ul.silder_con{
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: auto;
+}
+.top ul.silder_con li{
+	float:left;
+	height: auto;
+	position: relative;
+}
+.top ul.silder_con li img{
+	width: 100%;
+	height: auto;
+}
+.silder_nav{
+	width: 6.5em;
+	height: 0.7em;
+	position: absolute;
+	bottom:0.5em;
+	left:50%;
+	margin-left:-3em;
+}
+.silder_nav li{
+	float: left;
+	width: 0.8em;
+	height: 0.8em;
+	margin: 0 0.5em 0 0;
+	border-radius: 50% 50%;
+	background:#fff;
+}
+.silder_nav li.active{
+	background:#b6b5b2;
+	width: 0.8em;
+	height: 0.8em;
+	margin: 0 0.5em 0 0;
+	border-radius: 50% 50%;
+}
+.down{
+	width: 100%;
+	height: auto;
+	display: none;
+	margin:0 0 1em 0;
+}
+.downlogo{
+	width: 84%;
+	margin:1em auto 0 auto;
+	height: auto;
+}
+.downlogo img{
+	width: 100%;
+}
+.content{
+	width: 84%;
+	margin:0 auto;
+	color: #5a3602;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	display: none;
+	padding:0.5em 0 0 0;
+}
+.loadbg{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	z-index: 999999;
+	left:0;
+	top:0;
+}
+.loadimg{
+	width: 30%;
+	top:40%;
+	left: 35%;
+}
